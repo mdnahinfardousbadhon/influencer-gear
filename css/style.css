@@ -1,0 +1,66 @@
+/*========================
+        Google Font
+=========================*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #fff;
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/*========================
+        Header Area
+=========================*/
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+.brand-name h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #000;
+}
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu .nav-item ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.menu .nav-item ul li {
+    list-style: none;
+    margin-right: 20px;
+}
+.menu .nav-item ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+}
+.menu .icon ion-icon {
+    color: #000;
+    font-size: 23px;
+    margin-right: 10px;
+}
+
+/*========================
+        Home Section
+=========================*/

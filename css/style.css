@@ -98,7 +98,11 @@ nav .icon ion-icon {
 .influencer-text-box .fas {
     color: #fff;
     font-size: 16px;
-    margin-left: 5px;
+    margin-left: 3px;
+    transition: .2s;
+}
+.influencer-text-box a:hover .fas {
+    transform: translateX(5px);
 }
 .right-side-picture {
     text-align: right;
@@ -137,6 +141,7 @@ nav .icon ion-icon {
 #products-collection h2 {
     font-size: 34px;
     text-align: center;
+    font-weight: 700;
 }
 #products-collection .row {
     display: grid;
@@ -186,4 +191,73 @@ nav .icon ion-icon {
 .see-more a .fas {
     color: #E02C6D;
     margin-left: 3px;
+    transition: .2s;
+}
+.see-more a:hover .fas {
+    transform: translateX(5px);
+}
+/*========================
+      Featured Products
+=========================*/
+#featured-product {
+    padding: 90px 0;
+}
+#featured-product .row {
+    display: grid;
+    grid-template-columns: 500px 1fr;
+}
+.featured-product-info h2 {
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.featured-product-info a {
+    background-color: #E02C6D;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 30px;
+}
+.featured-product-info a .fas {
+    margin-left: 3px;
+    transition: .2s;
+}
+.featured-product-info a:hover .fas {
+    transform: translateX(5px);
+}
+/*========================
+      Footer Section
+=========================*/
+#footer {
+    background-color: #0A0826;
+    padding: 40px 0;
+    text-align: center;
+    color: #fff;
+}
+.footer-text-box h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.social-icon {
+    margin-top: 20px;
+}
+.social-icon a {
+    text-decoration: none;
+    background-color: #22213c;
+    color: #fff;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 11px;
+    margin-right: 10px;
+}
+.social-icon ion-icon {
+    font-size: 23px; 
+}
+.social-icon a:hover ion-icon {
+    transform: rotate(360deg);
+    transition: ease .8s;
 }

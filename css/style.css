@@ -237,7 +237,10 @@ nav .icon ion-icon {
 }
 #featured-product .row {
     display: grid;
-    grid-template-columns: 500px 1fr;
+    grid-template-columns: repeat(2, 1fr);
+}
+.featured-product-picture img {
+    width: 80%;
 }
 .featured-product-info h2 {
     font-size: 34px;

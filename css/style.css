@@ -503,6 +503,7 @@ nav .icon ion-icon {
     #testimonial .row {
         display: grid;
         grid-template-columns: 1fr;
+    }
 
 }
 @media only screen and  (max-width: 480px) {
@@ -542,5 +543,5 @@ nav .icon ion-icon {
     }
     #products-collection .row {
         grid-template-columns: 1fr;
-    }  
+    } 
 }

@@ -21,7 +21,7 @@ body {
 }
 
 /*========================
-        Header Area
+        Header Section
 =========================*/
 .navbar {
     display: flex;
@@ -34,28 +34,32 @@ body {
     font-weight: 700;
     color: #000;
 }
-.menu {
+.brand-name h3 a {
+    text-decoration: none;
+    color: #000;
+}
+nav {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.menu .nav-item ul {
+nav .nav-item ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
 
 }
-.menu .nav-item ul li {
+nav .nav-item ul li {
     list-style: none;
     margin-right: 20px;
 }
-.menu .nav-item ul li a {
+nav .nav-item ul li a {
     text-decoration: none;
     color: #000;
     font-size: 16px;
     font-weight: 600;
 }
-.menu .icon ion-icon {
+nav .icon ion-icon {
     color: #000;
     font-size: 23px;
     margin-right: 10px;
@@ -64,3 +68,122 @@ body {
 /*========================
         Home Section
 =========================*/
+#home {
+    padding: 90px 0;
+}
+#home .row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.influencer-text-box h1 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #000;
+    
+}
+.influencer-text-box h1 span {
+    color: #fdcb6e;
+}
+.influencer-text-box p {
+    margin: 20px 0 30px 0;
+}
+.influencer-text-box a {
+    text-decoration: none;
+    background-color: #E02C6D;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    display: inline-block;
+}
+.influencer-text-box .fas {
+    color: #fff;
+    font-size: 16px;
+    margin-left: 5px;
+}
+.right-side-picture {
+    text-align: right;
+    position: relative;
+}
+.right-side-picture .circle {
+    width: 60%;
+}
+.right-side-picture .camera {
+    width: 55%;
+    position: absolute;
+    top: 5%;
+    right: 3%;
+}
+/*===========================
+    Feature Brand Section
+=============================*/
+#featured-brand {
+    padding: 40px 0;
+}
+#featured-brand hr {
+    margin: 30px 0;
+    border: 1px solid #f8f8f8;
+}
+#featured-brand .row {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 0 30px;
+}
+/*========================
+    Products Collection
+=========================*/
+#products-collection {
+    padding: 45px 0 90px 0;
+}
+#products-collection h2 {
+    font-size: 34px;
+    text-align: center;
+}
+#products-collection .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    padding-top: 45px;
+}
+.popular-products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+.popular-products h3 {
+    font-size: 28px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.popular-products span {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.popular-products .rating ion-icon {
+    color: #FB8200;
+    font-size: 14px;
+}
+.popular-products .rating span {
+    font-size: 14px;
+    font-weight: 700;
+}
+.popular-products p {
+    margin-top: 5px;
+}
+.see-more {
+    text-align: right;
+    margin-top: 45px;
+}
+.see-more a {
+    text-decoration: none;
+    color: #E02C6D;
+    font-weight: 600;
+}
+.see-more a .fas {
+    color: #E02C6D;
+    margin-left: 3px;
+}

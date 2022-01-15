@@ -38,6 +38,17 @@ body {
     text-decoration: none;
     color: #000;
 }
+.menu-icon {
+    display: none;
+}
+.menu-icon a {
+    color: #000;
+    text-decoration: none;
+}
+.menu-icon a ion-icon {
+    font-size: 34px;
+    font-weight: 600;
+}
 nav {
     display: flex;
     align-items: center;
@@ -154,9 +165,13 @@ nav .icon ion-icon {
     flex-direction: column;
     justify-content: center;
     background-color: #fff;
-    padding: 15px;
+    padding: 20px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
+    flex-basis: auto;
+}
+.popular-products img {
+    width: 100%;
 }
 .popular-products h3 {
     font-size: 28px;
@@ -261,6 +276,9 @@ nav .icon ion-icon {
     transform: translateY(-10px);
     cursor: pointer;
 }
+.testimonial-card .feedback blockquote {
+    margin: 20px 0;
+}
 /*========================
       Footer Section
 =========================*/
@@ -295,4 +313,201 @@ nav .icon ion-icon {
 .social-icon a:hover ion-icon {
     transform: rotate(360deg);
     transition: ease .8s;
+}
+
+/*========================
+      Media Query
+=========================*/
+@media only screen and (max-width: 1200px) {
+    .container {
+        width: 100%;
+        padding: 0 60px;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .influencer-text-box h1 {
+        font-size: 36px;
+    }
+    .right-side-picture .circle {
+        width: 80%;
+    }
+    .right-side-picture .camera {
+        width: 75%;
+    }
+    #featured-brand .row {
+        grid-column-gap: 15px;
+    }
+    #products-collection h2,
+    .featured-product-info h2,
+    #testimonial h2 {
+        font-size: 30px;
+    }
+    .popular-products h3 {
+        font-size: 24px;
+    }
+    .popular-products span {
+        font-size: 20px;
+    }
+    .testimonial-card .testimonial-image img {
+        width: 80%;
+    }
+    .footer-text-box h3 {
+        font-size: 20px;
+    }
+    .footer-text-box span {
+        font-size: 14px;
+    }
+    .social-icon ion-icon {
+        font-size: 18px; 
+    }
+    .social-icon a {
+        padding: 12px;
+        height: 40px;
+        width: 40px;
+    }
+    #featured-brand .row img {
+        width: 90%;
+    }
+    #featured-brand .row img:nth-child(2),#featured-brand .row img:nth-child(5),#featured-brand .row img:nth-child(7) {
+        margin-top: 20px;
+    }
+    #featured-brand .row img:nth-child(3),
+    #featured-brand .row img:nth-child(4),
+    #featured-brand .row img:nth-child(6) {
+        margin-top: 15px;
+    }
+    
+}
+@media only screen and  (max-width: 768px) {
+    #home,
+    #featured-product,
+    #testimonial,
+    #products-collection {
+        padding: 60px 0;
+    }
+    .brand-name h3 {
+        font-size: 20px;
+    }
+    nav {
+        display: none;
+    }
+    nav .nav-item ul li a,
+    .influencer-text-box p,
+    .influencer-text-box a,
+    .influencer-text-box .fas,
+    .popular-products p,
+    .see-more a,
+    .featured-product-info a,
+    .featured-product-info p,
+    .testimonial-card .feedback blockquote{
+        font-size: 14px;
+    }
+    .influencer-text-box h1 {
+        font-size: 32px;
+    }
+    #featured-brand {
+        padding: 20px 0;
+    }
+    #products-collection h2,
+    .featured-product-info h2,
+    #testimonial h2 {
+        font-size: 28px;
+    }
+    .popular-products h3 {
+        font-size: 20px;
+    }
+    .popular-products span {
+        font-size: 18px;
+    }
+    .testimonial-card {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .testimonial-card .testimonial-image img {
+        width: 30%;
+    }
+    #home .row {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .right-side-picture {
+        text-align: center;
+        order: -1;
+    }
+    .right-side-picture .circle {
+        width: 53%;
+    }
+    .right-side-picture .camera {
+        width: 48%;
+        right: 28%;
+    }
+    .influencer-text-box {
+        text-align: center;
+    }
+    .influencer-text-box h1 {
+        margin-top: 20px;
+    }
+    .influencer-text-box p {
+        width: 65%;
+        margin: 30px auto;
+        text-align: center;
+    }
+    #products-collection .row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #featured-product {
+        text-align: center;
+    }
+    #featured-product .row {
+        grid-template-columns: 1fr;
+    }
+    .featured-product-picture img {
+        width: 80%;
+    }
+    .featured-product-info h2 {
+        margin: 20px 0;
+    }
+    .featured-product-info p {
+        width: 75%;
+        margin: auto;
+    }
+    #testimonial .row {
+        display: grid;
+        grid-template-columns: 1fr;
+
+}
+@media only screen and  (max-width: 480px) {
+    .container {
+        padding: 0 30px;
+    }
+    .influencer-text-box h1 {
+        font-size: 26px;
+    }
+    .influencer-text-box p {
+        width: 80%;
+    }
+    .right-side-picture .circle {
+        width: 83%;
+    }
+    .right-side-picture .camera {
+        width: 78%;
+        right: 13%;
+    }
+    #featured-brand .row {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    #featured-brand .row img {
+        width: 100%;
+    }
+    #products-collection h2,
+    .featured-product-info h2,
+    #testimonial h2 {
+        font-size: 23px;
+    }
+    #products-collection .row {
+        grid-template-columns: 1fr;
+    }
+
+    
 }
